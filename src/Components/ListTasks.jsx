@@ -18,7 +18,7 @@ function ListTasks({ tasks, setTasks }) {
     const statuses = ["todo", "completed"]
 
     return (
-        <div className='flex gap-16'>
+        <div className='flex flex-col md:flex-row md:flex-wrap gap-16'>
             {
                 statuses.map((status, index) => (
                     <Section
